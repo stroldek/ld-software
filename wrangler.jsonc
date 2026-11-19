@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "ld-software",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-19",
+  "workers_dev": true,
+  "assets": {"directory":"./public","binding":"ASSETS","run_worker_first":["/api/*"]},
+  "d1_databases": [{"binding":"DB","database_name":"zamovo-db","database_id":"a74188e1-5d68-4fea-8d91-e68de4d7bf62","migrations_dir":"migrations"}],
+  "observability": {"enabled":true}
+}
